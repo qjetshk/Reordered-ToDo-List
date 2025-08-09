@@ -1,12 +1,40 @@
-# React + Vite
+# Reordered Todo List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Demo GIF](./demo.gif) 
 
-Currently, two official plugins are available:
+Удобный менеджер задач с перетаскиванием, поиском и автосохранением
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Особенности
+- **Drag-n-Drop** — меняйте порядок задач перетаскиванием
+- **Автосохранение** — данные сохраняются в `localStorage`
+- **Поиск по задачам** — мгновенный поиск в реальном времени
+- **Адаптивный дизайн** — работает на любых устройствах
 
-## Expanding the ESLint configuration
+## 🛠 Технологии
+- React + TypeScript
+- Redux Toolkit
+- Tailwind CSS
+- Framer Motion (для анимаций)
+- Vite (сборка)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Как запустить
+
+1. Клонируйте репозиторий:
+```bash
+git clone https://github.com/ваш-логин/reordered-todo.git
+cd reordered-todo
+```
+
+2. Установите зависимости:
+```bash
+npm install
+# или
+yarn
+```
+
+3. Запустите проект:
+```bash
+npm run dev
+# или
+yarn dev
+```
