@@ -21,8 +21,8 @@
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/ваш-логин/reordered-todo.git
-cd reordered-todo
+git clone https://github.com/qjetshk/Reordered-ToDo-List.git
+cd Reordered-ToDo-List
 ```
 
 2. Установите зависимости:
@@ -38,3 +38,5 @@ npm run dev
 # или
 yarn dev
 ```
+
+4. Откройте проект в браузере и наслаждайтесь!
