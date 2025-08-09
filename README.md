@@ -1,12 +1,47 @@
-# React + Vite
+# 📝 Reordered Todo List 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Vercel Deployed](https://img.shields.io/badge/Live_Demo-000?style=for-the-badge&logo=vercel&logoColor=white)](https://reordered-todo-list.vercel.app/)
+![GitHub last commit](https://img.shields.io/github/last-commit/qjetshk/Reordered-ToDo-List?style=for-the-badge)
+![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)
 
-Currently, two official plugins are available:
+## Интуитивный менеджер задач с расширенными возможностями организации
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Demo Preview](./demo.gif)
 
-## Expanding the ESLint configuration
+## 🌟 Ключевые особенности
+| Функция | Для чего нужна |
+|---------|----------|
+| **🧩 Drag-n-Drop** | Меняйте приоритетность задач перетаскиванием |
+| **🔍 Умный поиск** | Мгновенная фильтрация по содержимому задач |
+| **💾 Автосохранение** | Все данные сохраняются в localStorage |
+| **📱 Адаптивный UI** | Оптимальное отображение на любых устройствах |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Технологический стек
+<div>
+  <img src="https://skillicons.dev/icons?i=react,typescript,redux,tailwind,vite" />
+</div>
+
+
+- **React 18** + **TypeScript** — ядро приложения
+- **Redux Toolkit** — глобальное состояние
+- **Tailwind CSS** — стилизация компонентов
+- **Framer Motion** — fluid-анимации перетаскивания
+- **Vite** — ультрабыстрая сборка
+
+## 🚀 Быстрый старт
+
+```bash
+# 1. Клонируйте репозиторий
+git clone https://github.com/qjetshk/Reordered-ToDo-List.git
+cd Reordered-ToDo-List
+```
+
+# 2. Установите зависимости
+```bash
+npm install
+```
+
+# 3. Запустите dev-сервер
+```bash
+npm run dev
+```
