@@ -20,7 +20,8 @@
 <div>
   <img src="https://skillicons.dev/icons?i=react,typescript,redux,tailwind,vite" />
 </div>
-</br>
+
+
 - **React 18** + **TypeScript** — ядро приложения
 - **Redux Toolkit** — глобальное состояние
 - **Tailwind CSS** — стилизация компонентов
