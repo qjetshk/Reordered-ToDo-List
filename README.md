@@ -12,7 +12,7 @@
 
 ## 🛠 Технологии
 - React + TypeScript
-<img src='https://redux-toolkit.js.org/img/redux.svg' width='100px'> Redux Toolkit
+- Redux Toolkit
 - Tailwind CSS
 - Framer Motion (для DnD)
 - Vite (сборка)
