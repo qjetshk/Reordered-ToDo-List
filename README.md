@@ -14,7 +14,7 @@
 - React + TypeScript
 - Redux Toolkit
 - Tailwind CSS
-- Framer Motion (для анимаций)
+- Framer Motion (для DnD)
 - Vite (сборка)
 
 ## 🚀 Как запустить
