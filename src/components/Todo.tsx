@@ -83,27 +83,28 @@ function Todo({ todo, index }: TTodoProps) {
           )}
         </span>
       </div>
-      <div className="flex flex-col items-center mr-5 flex-shrink-0 ml-2">
-        <span className="opacity-50 text-[#5990ffc5] text-[12px]">
-          {validateDate(todo.createdAt)}
-        </span>
-        <span className="opacity-50 text-[#5990ffc5] text-[12px]">
-          {new Date(todo.createdAt).toLocaleTimeString().slice(0, 5)}
-        </span>
+      <div className="grid ">
+        <div className="flex gap-3 flex-shrink-0">
+          {!todo.isChecked &&
+            (isEditing ? (
+              <Apply onApply={toUpdate} />
+            ) : (
+              <Edit setIsEditing={setIsEditing} />
+            ))}
+
+          <button onClick={() => dispatch(removeTodo(todo.id))}>
+            <Bin size={20} color={"#FF8E8E"} />
+          </button>
+        </div>
+        <div className="flex flex-col items-center mr-5 flex-shrink-0 ml-2">
+          <span className="opacity-50 text-[#5990ffc5] text-[12px]">
+            {validateDate(todo.createdAt)}
+          </span>
+          <span className="opacity-50 text-[#5990ffc5] text-[12px]">
+            {new Date(todo.createdAt).toLocaleTimeString().slice(0, 5)}
+          </span>
+        </div>
       </div>
-
-      <section className="flex gap-3 flex-shrink-0">
-        {!todo.isChecked &&
-          (isEditing ? (
-            <Apply onApply={toUpdate} />
-          ) : (
-            <Edit setIsEditing={setIsEditing} />
-          ))}
-
-        <button onClick={() => dispatch(removeTodo(todo.id))}>
-          <Bin size={20} color={"#FF8E8E"} />
-        </button>
-      </section>
     </li>
   );
 }
