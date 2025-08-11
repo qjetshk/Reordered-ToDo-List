@@ -54,7 +54,7 @@ function App() {
             <Bin size={30} color={"#FF8E8E"} />
           </div>
           <input
-            maxLength={100}
+            maxLength={120}
             value={input}
             onChange={(e) => {
               setInput(e.target.value);

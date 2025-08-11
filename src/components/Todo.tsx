@@ -70,8 +70,9 @@ function Todo({ todo, index }: TTodoProps) {
           </span>
           {isEditing ? (
             <textarea
+              maxLength={120}
               value={input}
-              className="outline-none flex-1 w-full min-w-0 bg-transparent resize-none"
+              className="outline-none flex-1 w-full min-w-0 bg-transparent resize-none overflow-y-hidden"
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => {
                 if (e.key === "Enter") toUpdate();
