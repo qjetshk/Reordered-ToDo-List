@@ -48,9 +48,11 @@ function Todo({ todo, index }: TTodoProps) {
       } bg-[#dde8ff] pl-2 tablet:pl-3 pr-4 tablet:pr-6 py-3 rounded-[10px] flex items-center`}
     >
       {!todo.isChecked && (
-        <span className="font-bold text-[14px] pr-2 tablet:pr-4 text-[#5990ffc5]">⋮⋮</span>
+        <span className="font-bold text-[14px] pr-2 tablet:pr-4 text-[#5990ffc5]">
+          ⋮⋮
+        </span>
       )}
-      <div className="flex gap-3 items-center flex-1 min-w-0">
+      <div className="flex gap-2 tablet:gap-3 items-center flex-1 min-w-0">
         <input
           checked={todo.isChecked}
           onChange={() => dispatch(checkTodo(todo.id))}
@@ -61,16 +63,15 @@ function Todo({ todo, index }: TTodoProps) {
         <span
           className={`${
             todo.isChecked && "line-through"
-          } text-[#3d3d3d] text-lg flex-1 min-w-0 break-words whitespace-normal`}
+          } text-[#3d3d3d] text-lg flex-1 flex min-w-0 break-words whitespace-normal`}
         >
-          <span className="font-semibold mr-1 flex-shrink-0">
+          <span className="font-semibold mr-1.5 flex items-center flex-shrink-0">
             {!todo.isChecked && `${index}.`}
           </span>
           {isEditing ? (
-            <input
+            <textarea
               value={input}
-              type="text"
-              className="outline-none flex-1 w-full min-w-0 bg-transparent"
+              className="outline-none flex-1 w-full min-w-0 bg-transparent resize-none"
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => {
                 if (e.key === "Enter") toUpdate();
