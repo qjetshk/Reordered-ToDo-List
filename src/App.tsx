@@ -49,7 +49,7 @@ function App() {
         <h1 className="text-[36px] font-bold text-[#3d3d3d] text-center">
           Reordered ToDo List
         </h1>
-        <div className="flex py-10 gap-3 justify-between max-w-[500px] mx-auto">
+        <div className="flex py-10 gap-3 justify-around max-w-[500px] mx-auto">
           <div onClick={() => dispatch(removeAll())}>
             <Bin size={30} color={"#FF8E8E"} />
           </div>

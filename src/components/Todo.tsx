@@ -44,11 +44,11 @@ function Todo({ todo, index }: TTodoProps) {
   return (
     <li
       className={`${
-        todo.isChecked ? "opacity-50 pl-6" : "cursor-grab"
-      } bg-[#dde8ff] pl-3 pr-6 py-3 rounded-[10px] flex items-center justify-between`}
+        todo.isChecked ? "opacity-50 pl-3 tablet:pl-6" : "cursor-grab"
+      } bg-[#dde8ff] pl-2 tablet:pl-3 pr-4 tablet:pr-6 py-3 rounded-[10px] flex items-center`}
     >
       {!todo.isChecked && (
-        <span className="font-bold text-[14px] pr-4 text-[#5990ffc5]">⋮⋮</span>
+        <span className="font-bold text-[14px] pr-2 tablet:pr-4 text-[#5990ffc5]">⋮⋮</span>
       )}
       <div className="flex gap-3 items-center flex-1 min-w-0">
         <input
@@ -83,8 +83,8 @@ function Todo({ todo, index }: TTodoProps) {
           )}
         </span>
       </div>
-      <div className="grid ">
-        <div className="flex gap-3 flex-shrink-0">
+      <div className="grid tablet:grid-cols-2 grid- grid-cols-1 gap-2 ml-2.5">
+        <div className="flex gap-3 justify-center">
           {!todo.isChecked &&
             (isEditing ? (
               <Apply onApply={toUpdate} />
@@ -96,11 +96,12 @@ function Todo({ todo, index }: TTodoProps) {
             <Bin size={20} color={"#FF8E8E"} />
           </button>
         </div>
-        <div className="flex flex-col items-center mr-5 flex-shrink-0 ml-2">
-          <span className="opacity-50 text-[#5990ffc5] text-[12px]">
+
+        <div className="grid grid-cols-1 tablet:order-[-1]">
+          <span className="opacity-50 text-[#5990ffc5] text-[12px] text-center">
             {validateDate(todo.createdAt)}
           </span>
-          <span className="opacity-50 text-[#5990ffc5] text-[12px]">
+          <span className="opacity-50 text-[#5990ffc5] text-[12px] text-center">
             {new Date(todo.createdAt).toLocaleTimeString().slice(0, 5)}
           </span>
         </div>
